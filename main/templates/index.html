@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+ <div class="container">
+
+   <div class="starter-template">
+     <h1>Twitter Analytics</h1>
+     <p class="lead">
+       Use this system to collect tweets of people<br>
+       within a 10km radius from your location
+     </p>
+   </div>
+<h4>Your Address: {{address}}</h4>
+<h4>Your Latitude: {{latitude}}</h4>
+<h4>Your Longitude: {{longitude}}</h4>
+<br>
+<h4>Tweets:</h4>
+<br>
+
+
+  {% for tweet in tweets %}
+  <p>  @{{tweet.user.screen_name}} {{tweet.created_at}}<br>{{tweet.text}}</p>
+  {% endfor %}
+
+<br>
+
+
+ </div>
+
+
+{% endblock %}
