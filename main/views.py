@@ -16,11 +16,11 @@ def index(request):
 		latitude_str =  str(variable_latitude)
 		longitude_str = str(variable_longitude)
 
-		consumer_key = 'OfMKxNKdAm6FBHCIUZeV2cp3V'
-		consumer_secret = '5M4ZyY8xrA3eVaPVNbZ5pFuheaiUTRCpd1Y5VNR8oWhQL6KcYW'
+		consumer_key = 'INSERT YOUR KEY HERE'
+		consumer_secret = 'INSERT YOUR KEY HERE'
 
-		access_token = '2727885369-3s8i9LPX5GdUxP9UUDKyLcl9cPps7Gf31DzkYmE'
-		token_secret = 'Fzsas4jU5Q4qFEfRUGmmuXrIIEBHBROYm1fB40csZCC67'
+		access_token = 'INSERT YOUR KEY HERE'
+		token_secret = 'INSERT YOUR KEY HERE'
 
 		consumer = oauth2.Consumer(consumer_key, consumer_secret)
 		token = oauth2.Token(access_token, token_secret)
